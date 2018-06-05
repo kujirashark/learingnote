@@ -1,4 +1,14 @@
+>作者:李忠林
+>
+>github: https://github.com/Leezhonglin
+>
+>日期: 2018年5月15日
+
+
+
 # git构建安装
+
+
 
 ### 安装步骤
 
