@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% block title %}
+{% endblock %}
+
+{% block extCSS%}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+{% block content%}
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>班级</th>
+            <th>描述</th>
+            <th>操作</th>
+
+        </tr>
+        {% for grade in grades %}
+        <tr>
+            <td>{{grade.g_id}}</td>
+            <td>{{grade.g_name}}</td>
+            <td>{{grade.g_desc}}</td>
+            <td><a href="/user/create_stu_by_grade/?g_id={{grade.g_id}}">添加学生</a>  |
+                <a href="/user/select_stu_by_grade/?g_id={{grade.g_id}}">查看学生</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

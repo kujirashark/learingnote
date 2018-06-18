@@ -1,0 +1,26 @@
+﻿{% extends 'base_main.html' %}
+{% block title %}
+    头部-有点
+{% endblock %}
+
+{% block extCSS %}
+    <link rel="stylesheet" type="text/css" href="/static/css/public.css" />
+{% endblock %}
+
+{% block extJS %}
+    {{ block.super }}
+    <script type="text/javascript" src="/static/js/public.js"></script>
+{% endblock %}
+
+{% block indexbody %}
+    <!-- 头部 -->
+	<div class="head">
+		<div class="headL">
+			<img class="headLogo" src="/static/img/logLOGO.png"/>
+		</div>
+		<div class="headR">
+			<span style="color:#FFF"><a href="login.html" target="_blank">【登录】</a></span>
+		</div>
+	</div>
+{% endblock %}
+

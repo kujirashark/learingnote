@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+{% block title %}
+{% endblock %}
+
+{% block extCSS%}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+{% block content%}
+<h3>学生信息:</h3>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>操作</th>
+        </tr>
+        {% for stu in stus %}
+        <tr>
+            <td>{{stu.s_id}}</td>
+            <td>{{stu.s_name}}</td>
+            <td>{{stu.s_age}}</td>
+            <td><a href="/user/update_stu/?id={{stu.s_id}}">编辑</a>  |  <a href="">删除</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+        <div >
+            {% if paginate.has_prev %}
+                <a href="/user/page/?page={{ paginate.prev_num }}">上一页</a>
+            {%endif%} 
+            
+            {% for i  in  paginate.iter_pages()  %}
+                <a href="/user/page/?page={{ i }}">{{ i }}</a>
+            {% endfor %}
+            {% if paginate.has_next %}
+               <a href="/user/page/?page={{ paginate.next_num }}">下一页</a>
+            {% endif %}
+            <span>| 共{{paginate.pages}}页 | 当前第{{paginate.page}}页</span>
+         </div>
+
+      
+
+
+{% endblock %}

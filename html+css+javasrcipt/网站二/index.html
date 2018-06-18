@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 960px;
+				margin: 0 auto;
+				background-image: url(img/dark-wood.jpg);
+				
+			}
+			header{
+				width: 880px;
+				height: 140px;
+				background-image: url(img/header.jpg);
+				margin: 30px auto;
+			}
+			nav{
+				position: relative;
+				top:140px
+
+			}
+			nav ul {
+				width: 880px;
+				height: 30px;
+				margin: 0 auto;
+				background-color: gray;
+			}
+			nav li {
+				text-align: center;
+				width: 120px;
+				display: inline-block;
+				list-style: none;
+				margin: 1px 0;	
+			}
+			nav li:hover{
+				cursor: pointer;	
+			}
+			nav a:hover{
+				color: black;
+			}
+			nav a {
+				text-decoration: none;
+				color: white;
+			}
+			.main{
+				width: 880px;
+				height: 550px;
+				margin: 0 auto;
+				background: #FFFFFF;
+				
+			}
+			.left{
+				width: 550px;
+				height: 500px;
+				/*border: 1px solid blueviolet;*/
+				float: left;
+			}
+			.kuang{
+				width: 320px;
+				height: 240px;
+				border: 1px solid gainsboro;
+				margin: 20px 20px;
+			}
+			.kuang li{
+				list-style: none;
+				margin-left: 20px;
+				font-size: 15px;
+				color: rgb(146,151,161);
+				
+			}
+			
+			.photo1{
+				width: 290px;
+				height: 190px;
+				background-image: url(img/bok-choi.jpg);
+				/*border:2px solid gainsboro;*/
+				margin: 10px auto;
+				
+			}
+			.photo2{
+				width: 290px;
+				height: 190px;
+				background-image: url(img/teriyaki.jpg);
+				/*border:2px solid gainsboro;*/
+				margin: 10px auto;
+				
+			}
+			.left2{
+				width: 220px;
+				height: 550px;
+				border-right: 1px solid gainsboro;
+				/*float: right;*/
+				position: relative;
+				top:-549px;
+				right: -380px;	
+			}
+			
+			.content{
+				width: 90%;
+				height: 40%;
+				margin-top: 25px;
+				padding-top: 20px;
+				font-size: 14px;
+				clear:both;
+				overflow: hidden;
+				
+			}
+			.content h3{
+				color: rgb(146,151,161);
+			}
+			.content p{
+				color: rgb(146,151,161);
+			}
+			.content h4{
+				color: lightcoral;
+				margin-bottom: 10px;
+			}
+			.right{
+				width: 270px;
+				height: 500px;
+				/*border: 1px solid blue;*/
+				float: right;
+				overflow: hidden;
+			}
+			.al{
+				height: 300px;
+				color: lightcoral;
+				margin-left: 20px;
+			}
+			.al ul{
+				margin-top: 30px;
+				list-style: none;
+			}
+			.al li{
+				width: 220px;
+				height: 50px;
+				margin: 10px;
+				border-bottom: 1px solid gainsboro;
+			}
+			.al a{
+				text-decoration: none;
+				color: lightcoral;
+			}
+			.address{
+				margin-left: 20px;
+			}
+			.address p{
+				width: 200px;
+				height: 40px;
+				margin: 20px;
+				font-size: 15px;
+				color: rgb(146,151,161);
+			}
+			.address h3{
+				color:lightcoral ;
+			}
+			footer{
+				width: 880px;
+				height: 40px;
+				background-color: gray;
+				margin: 0 auto;
+			}
+			footer h3{
+				color: white;
+				padding:5px 0 0 20px;
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Classes</a></li>
+						<li><a href="">Catering</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>		
+		</header>
+						
+			<div class="main">
+				<div class="left">
+					<div c>
+						<ul class="kuang">
+							<div class="photo1"></div>
+							<li>Bok Choi</li>
+						</ul>			
+					</div>
+					
+					<div>
+						<ul class="kuang">
+							<div class="photo2"></div>
+							<li>Teriyaki Sauce</li>
+						</ul>			
+					</div>
+					
+					<div class="left2">
+					<div class="content">
+						<h3>Japanese Vegetarian </h3>
+						<h4>Five week course in London</h4>
+						<p>A five week introduction to traditional Japanese Vegetarian meals,teaching you a seletion of rice and noodle dishes.</p>
+					</div>
+					<div class="content" >
+						<h3>Sauces Masterclas </h3>
+						<h4>One day workshop</h4>
+						<p>An intensive one-day course looking at how to create the most delicious sauces for ues in a range of Japanese cookery.</p>
+					</div>	
+					</div>
+				</div>
+				
+				<div class="right" >
+					<div class="al">
+						<ul>
+							<h3>Popular Recipes</h3>
+							<li><a href="#">Yakitori(girlled chicken)</a></li>
+							<li><a href="#">Tsukune(minced chicken patties)</a></li>
+							<li><a href="#">Okonomiyaki(savory pancakes)</a></li>
+							<li><a href="#">Mizutaki(chicken stew)</a></li>
+						</ul>	
+					</div>
+					<div class="address">
+						<h3>Contact</h3>
+						<p>Yoko's Kitchen 27 Redchurch Street Shoreditch London E27DP</p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<footer>
+				
+				<h3>&copy; 2011 Yoko's Kitchen</h3>
+			</footer>
+			
+			
+		</div>		
+	</body>
+</html>

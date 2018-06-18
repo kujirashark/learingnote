@@ -1,0 +1,172 @@
+footer .mine span {
+    background: url(/static/img/mine_selected.png) no-repeat;
+    background-size: 0.513889rem;
+}
+
+footer .mine dl dd {
+    color: orange;
+}
+
+#mine {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: +10;
+    background: whitesmoke;
+    overflow: hidden;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background: pink;
+    padding-top: 0.5rem;
+}
+
+.fixed > span {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin: 0 0.3rem 0;
+    font-size: 1.5rem;
+    color: black;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1.8rem;
+}
+
+.fixed > img {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin: 0 0.3rem 0;
+    font-size: 1.5rem;
+    color: black;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1.8rem;
+}
+
+.fixed p {
+    margin-bottom: 0.5rem;
+    font-size: 0.5rem;
+    color: white;
+}
+
+.fixed p span:first-child {
+    color: gold;
+}
+
+.fixed p span:last-child {
+    color: red;
+    display: inline-block;
+    text-indent: 0.3rem;
+}
+
+#regis {
+    position: absolute;
+    right: 0.3rem;
+    top: 1.3rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.fixed p:last-child {
+    background: #f0e000;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 0;
+    font-size: 0.4rem;
+    line-height: 0.5rem;
+    height: 1rem;
+}
+
+.fixed p:last-child span:last-child {
+    margin: 0.2rem;
+    color: white;
+}
+
+.fixed p:last-child span:first-child {
+    color: green;
+}
+
+
+
+
+.mine {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 1.5rem;
+    font-size: 0.4rem;
+}
+
+.mine p {
+    line-height: 1.5rem;
+    padding: 0 0.3rem;
+    background: white;
+    border-bottom: 0.04rem solid lightyellow;
+}
+
+.mine p a {
+    color: grey;
+    float: right;
+}
+
+.mine #nav, .mine menu {
+    padding: 0.5rem 0 0.3rem;
+    margin-bottom: 0.4rem;
+    background: white;
+}
+
+.mine #nav ul, .mine menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mine #nav ul li dl, .mine menu ul li dl {
+    text-align: center;
+}
+
+.mine #nav ul li dl dt, .mine menu ul li dl dt {
+    width: 100%;
+    line-height: 1rem;
+}
+
+.mine #nav ul li dl dt span, .mine menu ul li dl dt span {
+    font-size: 0.5rem;
+}
+
+.mine menu ul {
+    flex-wrap: wrap;
+}
+
+.mine menu ul li {
+    width: 25%;
+}
+
+.mine menu ul li:last-child {
+    width: 100%;
+}
+
+.mine menu ul li:last-child dl {
+    width: 25%;
+}
+
+.mine .logout > a {
+    line-height: 1.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    float: none;
+}

@@ -1,0 +1,137 @@
+{% extends 'base_main.html' %}
+{% load static %}
+{% block extCSS %}
+{{ block.super }}
+    <link rel="stylesheet" href="{% static 'app/cart/cart.css' %}">
+{% endblock %}
+
+{% block EXTJS %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'app/cart/js/cart.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="cart">
+
+        <h3>购物车</h3>
+
+        <div class="full">
+
+            <section class="clear">
+
+                <ul>
+                    <li>收货人:王帅帅<div><p><span><a href="#">修改&gt;</a></span></p></div></li>
+                    <li>电话:8008208820 </li>
+                    <li>收货地址:宝胜北里西区28号天丰利商城</li>
+
+                </ul>
+
+
+                <div class="bill">
+
+                    <p>闪送超市</p>
+
+                    <a href="#">凑单专区</a>
+
+                    <p>满100减99</p>
+
+                </div>
+
+                <p class="delivery">
+
+                    <span>收货时间:</span>
+                    <span>一小时送达</span>
+                    <a href="#">可送达&gt;</a>
+                </p>
+
+                <p class="delivery">
+                    <span>留言:</span>
+                    <input type="text" placeholder="有什么特殊需求">
+                </p>
+
+
+                <menu>
+
+                    <ul>
+                        <!--购物车信息展示-->
+                            <li class="menuList" cartid="">
+                                <div class="confirm">
+                                    <span class="is_choose" is_select="">
+
+                                            <span>√</span>
+
+                                            <span></span>
+
+
+                                    </span>
+                                </div>
+                                <a href="#">
+                                    <img src="" alt="">
+                                    <p></p>
+                                </a>
+                                <section>
+                                    <button class="subShopping">-</button>
+                                    <span></span>
+                                    <button class="addShopping">+</button>
+                                </section>
+                            </li>
+                        <!--购物车数据处理结束-->
+
+
+                        <li class="payTheBill">
+
+                            <div class="confirm" id="all_select">
+                                <span>
+
+                                        <span>√</span>
+
+                                        <span></span>
+
+                                </span>
+                            </div>
+
+                            <p>
+                                <span>全选</span>
+                                <span>总价:</span>
+                            </p>
+
+                            <span id="generate_order">下单</span>
+
+                        </li>
+
+                    </ul>
+
+                </menu>
+
+{#            <div class="menuList">#}
+{##}
+{#                {% for cart in carts %}#}
+{##}
+{#                    <div class="confirm">#}
+{#                    <span>#}
+{#                        <span>√</span>#}
+{#                    </span>#}
+{#                    </div>#}
+{##}
+{#                    <a href="#">#}
+{#                        <img src="{{ cart.goods.productimg }}" alt="{{ cart.goods.productlongname }}">#}
+{#                        <p>{{ cart.goods.productlongname }}</p>#}
+{#                    </a>#}
+{##}
+{#                {% endfor %}#}
+{##}
+{##}
+{#            </div>#}
+            </section>
+
+
+
+        </div>
+
+
+    </div>
+
+
+{% endblock %}

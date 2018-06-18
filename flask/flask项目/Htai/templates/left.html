@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页左侧导航</title>
+<link rel="stylesheet" type="text/css" href="/static/css/public.css" />
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/public.js"></script>
+<head></head>
+
+<body id="bg">
+	<!-- 左边节点 -->
+	<div class="container">
+
+		<div class="leftsidebar_box">
+			<a href="#" target="main"><div class="line">
+					<img src="/static/img/coin01.png" />&nbsp;&nbsp;首页
+				</div></a>
+			<dl class="system_log">
+				{% for permission in permissions %}
+					{% if permission.p_er == 'BJLB' %}
+					<dt>
+						<img class="icon1" src="/static/img/coin03.png" /><img class="icon2"
+							src="/static/img/coin04.png" /> 班级管理<img class="icon3"
+							src="/static/img/coin19.png" /><img class="icon4"
+							src="/static/img/coin20.png" />
+					</dt>
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a class="cks" href="/user/grade/"
+							target="main">班级列表</a><img class="icon5" src="/static/img/coin21.png" />
+					</dd>
+					{% endif%}
+				{% endfor %}
+
+				{% for permission in permissions %}
+					{% if permission.p_er == 'TJBJ' %}
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a class="cks" href="/user/addgrade/"
+							target="main">班级添加</a><img class="icon5" src="/static/img/coin21.png" />
+					</dd>
+					{% endif%}
+				{% endfor %}
+			</dl>
+
+			<dl class="system_log">
+					{% for permission in permissions %}
+						{% if permission.p_er == 'XSLB' %}
+						<dt>
+							<img class="icon1" src="/static/img/coin03.png" /><img class="icon2"
+								src="/static/img/coin04.png" /> 学生管理<img class="icon3"
+								src="/static/img/coin19.png" /><img class="icon4"
+								src="/static/img/coin20.png" />
+						</dt>
+						<dd>
+							<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+								src="/static/img/coin222.png" /><a class="cks" href="/user/student/"
+								target="main">学生列表</a><img class="icon5" src="/static/img/coin21.png" />
+						</dd>
+					{% endif %}
+				{% endfor %}
+
+				{% for permission in permissions %}
+						{% if permission.p_er == 'TJXS' %}
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a class="cks" href="/user/addstu/"
+							target="main">添加学生</a><img class="icon5" src="/static/img/coin21.png" />
+					</dd>
+					{% endif %}
+				{% endfor %}
+			</dl>
+			<dl class="system_log">
+				{% for permission in permissions %}
+					{% if permission.p_er == 'JSLB' %}
+					<dt>
+						<img class="icon1" src="/static/img/coin03.png" /><img class="icon2"
+							src="/static/img/coin04.png" />权限管理<img class="icon3"
+							src="/static/img/coin19.png" /><img class="icon4"
+							src="/static/img/coin20.png" />
+					</dt>
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a class="cks" href="/user/roles/"
+							target="main">角色列表</a><img class="icon5" src="/static/img/coin21.png" />
+					</dd>
+					{% endif %}
+				{% endfor %}
+
+				{% for permission in permissions %}
+					{% if permission.p_er == 'TJJS' %}
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a class="cks" href="/user/addroles/"
+							target="main">添加角色</a><img class="icon5" src="/static/img/coin21.png" />
+					</dd>
+					{% endif %}
+				{% endfor %}
+				{% for permission in permissions %}
+					{% if permission.p_er == 'QXLB' %}
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a class="cks" href="/user/permissions/"
+							target="main">权限列表</a><img class="icon5" src="/static/img/coin21.png" />
+					</dd>
+					{% endif %}
+				{% endfor %}
+				{% for permission in permissions %}
+					{% if permission.p_er == 'TJQX' %}
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a class="cks" href="/user/addpermission/"
+							target="main">添加权限</a><img class="icon5" src="/static/img/coin21.png" />
+					</dd>
+					{% endif %}
+				{% endfor %}
+			</dl>
+			<dl class="system_log">
+				{% for permission in permissions %}
+					{% if permission.p_er == 'YHLB' %}
+					<dt>
+						<img class="icon1" src="/static/img/coinL1.png" /><img class="icon2"
+							src="/static/img/coinL2.png" />用户管理<img class="icon3"
+							src="/static/img/coin19.png" /><img class="icon4"
+							src="/static/img/coin20.png" />
+					</dt>
+
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a href="/user/userlist/"
+							target="main" class="cks">用户列表</a><img class="icon5"
+							src="/static/img/coin21.png" />
+					</dd>
+					{% endif %}
+				{% endfor %}
+				{% for permission in permissions %}
+					{% if permission.p_er == 'TJYH' %}
+					<dd>
+						<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+							src="/static/img/coin222.png" /><a href="/user/adduser/"
+							target="main" class="cks">添加用户</a><img class="icon5"
+							src="/static/img/coin21.png" />
+					</dd>
+					{% endif %}
+				{% endfor %}
+			</dl>
+			<dl class="system_log">
+				<dt>
+					<img class="icon1" src="/static/img/coinL1.png" /><img class="icon2"
+						src="/static/img/coinL2.png" /> 系统管理<img class="icon3"
+						src="/static/img/coin19.png" /><img class="icon4"
+						src="/static/img/coin20.png" />
+				</dt>
+				<dd>
+					<img class="coin11" src="/static/img/coin111.png" /><img class="coin22"
+						src="/static/img/coin222.png" /><a href="/user/changepwd/"
+						target="main" class="cks">修改密码</a><img class="icon5"
+						src="/static/img/coin21.png" />
+				</dd>
+				<dd>
+					<img class="coin11" src="/static/img/coin111.png" />
+					<img class="coin22" src="/static/img/coin222.png" />
+					<a href="/user/logout/" class="cks">退出</a>
+					<img class="icon5" src="/static/img/coin21.png" />
+				</dd>
+			</dl>
+
+		</div>
+
+	</div>
+</body>
+</html>

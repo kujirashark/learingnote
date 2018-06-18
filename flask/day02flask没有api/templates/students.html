@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{% block title %}
+{% endblock %}
+
+{% block extCSS%}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+{% block content%}
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>操作</th>
+
+        </tr>
+        {% for stu in stus %}
+        <tr>
+            <td>{{stu.s_id}}</td>
+            <td>{{stu.s_name}}</td>
+            <td>{{stu.s_age}}</td>
+            <td><a href="/user/update_stu/?id={{stu.s_id}}">编辑</a>  |
+                <a href="">删除</a> |
+                <a href="/user/add_course/?s_id={{stu.s_id}}">添加课程</a> |
+                <a href="/user/show_course/{{stu.s_id}}">查看课程</a>
+
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div>
+        <ul>
+            <li><a href=""></a>上一页</li>
+            <li><a href=""></a>2</li>
+            <li><a href=""></a>首页</li>
+
+        </ul>
+
+
+
+
+
+
+    </div>
+{% endblock %}

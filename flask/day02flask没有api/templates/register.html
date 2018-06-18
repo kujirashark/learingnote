@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    注册
+{% endblock %}
+
+{% block title %}
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th>姓名</th>
+                <th>密码</th>th>
+                <th>确认密码</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="username" placeholder="请输入用户名">
+                </td>
+                <td>
+                    <input type="password" name="password1" >
+                </td>
+                <td>
+                    <input type="password" name="password2" >
+                </td>
+
+                <td>
+                    <input type="submit" value="提交">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+{% endblock %}

@@ -1,0 +1,162 @@
+{% extends 'base_main.html' %}
+{% load static %}
+{% block extCSS %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'app/home/home.css' %}">
+{% endblock %}
+
+{% block EXTJS %}
+    <script type="text/javascript" src="{% static 'app/home/js/home.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+    <div id="home">
+        {#   顶部轮播       #}
+        <div class="swiper-container" id="topSwiper">
+            <div class="swiper-wrapper">
+                <!--处理轮播banner图-->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+                <!-- 处理结束 -->
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+        {#         导航         #}
+        <div class="topMenu">
+            <nav>
+                <ul>
+                    <!-- 处理导航数据 -->
+                        <li>
+                            <img src="" alt="">
+                            <span></span>
+                        </li>
+                    <!--处理结束-->
+                </ul>
+            </nav>
+        </div>
+        {#         必购     #}
+        <div id="swiperMenu" class="swiper-container">
+
+            <ul class="swiper-wrapper">
+                <!-- 处理必购商品信息 -->
+                    <li class="swiper-slide">
+                        <img src="" alt="">
+                    </li>
+                <!-- 处理结束 -->
+
+            </ul>
+
+        </div>
+        {#          商店    #}
+        <div class="CVS">
+            <!--处理第一个店铺的数据的图片-->
+            <h2>
+                <img src="" alt="">
+            </h2>
+            <!--处理结束-->
+
+            <fieldset>
+                <!--处理第二个到第四个数据-->
+                    <a href="#">
+                        <img src="" alt="">
+                    </a>
+                <!--处理结束-->
+            </fieldset>
+
+            <ul>
+                <!--处理第五个到第八个数据-->
+                    <li>
+                        <a href="#">
+                            <img src="" alt="">
+                            <span></span>
+                        </a>
+                    </li>
+                <!--处理结束-->
+
+            </ul>
+
+            <ol>
+                <!--处理第八个到第十二个数据-->
+                    <li>
+                        <a href="#">
+                            <img src="" alt="">
+                        </a>
+                    </li>
+                <!--处理结束-->
+
+            </ol>
+
+        </div>
+
+        {#         主要显示 #}
+
+        <div class="mainInfo">
+            <!--商品展示-->
+                <section>
+                    <h3><span></span><a href="#">更多&gt;</a></h3>
+
+                    <div>
+                        <a href="#">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <img src="" alt="">
+                                <p class="description">
+
+                                </p>
+                                <span>￥</span>
+                                <s>￥</s>
+                            </a>
+                            <button>
+                                <span>+</span>
+                            </button>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <img src="" alt="">
+                                <p class="description">
+
+                                </p>
+                                <span>￥</span>
+                                <s>￥</s>
+                            </a>
+                            <button>
+                                <span>+</span>
+                            </button>
+                        </li>
+                       <li>
+                            <a href="#">
+                                <img src="" alt="">
+                                <p class="description">
+
+                                </p>
+                                <span>￥</span>
+                                <s>￥</s>
+                            </a>
+                            <button>
+                                <span>+</span>
+                            </button>
+                        </li>
+
+
+                    </ul>
+
+                </section>
+            <!--商品展示结束-->
+
+
+        </div>
+    </div>
+
+{% endblock %}

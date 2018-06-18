@@ -1,0 +1,296 @@
+footer .cart span {
+    background: url(/static/img/cart_selected.png) no-repeat;
+    background-size: 0.513889rem;
+}
+
+footer .cart dl dd {
+    color: orange;
+}
+
+#cart {
+    padding: 1.5rem 0;
+    z-index: +15;
+    width: 100%;
+    background: #fafafa;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    overflow: hidden;
+}
+
+header {
+    height: 0;
+}
+
+h3 {
+    text-align: center;
+    position: fixed;
+    z-index: +100;
+    width: 100%;
+    border-bottom: 0.04rem solid lightgrey;
+    line-height: 1.5rem;
+    background: white;
+    top: 0;
+    margin-top: 0 !important;
+}
+
+.full > section {
+    background: lightpink;
+}
+
+.full > section > ul {
+    border: 0.2rem dashed lightgreen;
+    border-width: 0.1rem 0;
+    margin-bottom: 0.2rem;
+}
+
+.full > section > ul > li {
+    padding-left: 0.3rem;
+    line-height: 0.8rem;
+    font-size: 0.375rem;
+}
+
+.full > section > ul > li:last-child {
+    padding-left: 0.3rem;
+    line-height: 0.8rem;
+    font-size: 0.375rem;
+    margin-top: 0.15rem;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+.full > section > ul > li > div > p:last-child {
+    float: right;
+    width: 78%;
+    text-align: right;
+}
+
+.full > section > ul > li > div > p:last-child > span {
+    padding: 0rem 0.15rem;
+}
+
+
+.infoJustify {
+    float: left;
+    width: 20%;
+    height: 0.8rem;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.infoJustify > b {
+    display: inline-block;
+    width: 100%;
+}
+
+.change {
+    float: right;
+    padding-right: 0.2rem;
+}
+
+
+/************闪送超市********************/
+.bill {
+    line-height: 0.75rem;
+    position: relative;
+    border-bottom: 0.04rem solid lightgrey;
+}
+
+.bill > p {
+    padding: 0 0.3rem;
+    font-size: 0.3rem;
+    color: aqua;
+}
+
+.bill > p:first-child:before {
+    width: 0.2rem;
+    height: 0.3rem;
+    background: yellow;
+    content: ".";
+    color: yellow;
+    margin-right: 0.2rem;
+}
+
+.bill > a {
+    border: 0.05rem solid orangered;
+    position: absolute;
+    border-radius: 0.3rem;
+    padding: 0 0.3rem;
+    font-size: 0.35rem;
+    line-height: 0.65rem;
+    top: 0.2rem;
+    right: 0.5rem;
+}
+
+/*************收货时间*****收货备注************/
+.delivery {
+    line-height: 1.5rem;
+    border-bottom: 0.04rem solid lightgrey;
+    font-size: 0.4rem;
+    padding: 0 0.3rem;
+}
+
+.delivery > span:first-child {
+    padding-right: 0.3rem;
+}
+
+.delivery > span:nth-child(2) {
+    color: orangered;
+}
+
+.delivery > a:last-child {
+    float: right;
+}
+
+.delivery > input {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 0.1rem;
+    border-width: 0.04rem;
+    width: 70%;
+}
+
+/**************menu***************/
+.menuList {
+    border-bottom: 0.04rem solid lightgrey;
+    height: 2.5rem;
+    position: relative;
+}
+
+.confirm {
+    padding: 0.95rem 0;
+    width: 15%;
+    height: 2.5rem;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.confirm > span {
+    box-sizing: border-box;
+    border: 0.04rem solid orange;
+    background: white;
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    overflow: hidden;
+    border-radius: 50%;
+    line-height: 0.6rem;
+}
+
+.confirm > span > span {
+    background: yellow;
+    font-size: 0.5rem;
+    display: block;
+}
+
+.menuList > a {
+    width: 84%;
+    display: inline-block;
+    font-size: 0.4rem;
+    line-height: 1rem;
+}
+
+.menuList > a > img {
+    margin-top: 0.25rem;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.menuList > a > p {
+    width: 75%;
+    height: 1rem;
+    float: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menuList > section {
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.4rem;
+    height: 0.75rem;
+    border-radius: 1rem;
+}
+
+.menuList > section > button {
+    background: white;
+    border: 1px solid orange;
+    border-radius: 1111px;
+    color: red;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.65rem;
+    font-size: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.menuList > section > span {
+    display: inline-block;
+    width: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.4rem;
+}
+
+
+
+
+.presentPrice:before {
+    content: "¥";
+    font-size: 0.33rem;
+}
+
+/*************payTheBill 买单*************/
+.payTheBill {
+    height: 1.5rem;
+    position: relative;
+}
+
+.payTheBill .confirm {
+    width: 10%;
+    padding-top: 0.5rem;
+    padding-left: 0.4rem;
+}
+
+.payTheBill > p {
+    line-height: 1.5rem;
+    text-indent: 0.3rem;
+    font-size: 0.5rem;
+}
+
+.payTheBill > p > span:first-child {
+    padding-right: 0.8rem;
+}
+
+.payTheBill > p > span:last-child {
+    padding-left: 0.3rem;
+    color: red;
+}
+
+.payTheBill > p > span:last-child:before {
+    content: "¥";
+    font-size: 0.5rem;
+}
+
+.payTheBill > span {
+    background: yellow;
+    position: absolute;
+    right: 0;
+    line-height: 1.5rem;
+    top: 0;
+    font-size: 0.5rem;
+    padding: 0 0.7rem;
+}
+
+
+
+

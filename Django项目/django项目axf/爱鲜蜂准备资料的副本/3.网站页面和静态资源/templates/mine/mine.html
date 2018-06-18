@@ -1,0 +1,135 @@
+{% extends 'base_main.html' %}
+{% load static %}
+{% block extCSS %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'app/mine/mine.css' %}">
+{% endblock %}
+
+{% block EXTJS %}
+{{ block.super }}
+    <script type="text/javascript" src="{% static 'app/mine/js/mine.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+    <div id="mine">
+
+        <div class="fixed">
+            <!--如果登录，展示头像-->
+                <img src="" alt="icon">
+            <!--或者-->
+                <span class="glyphicon glyphicon-user"></span>
+            <!--判断结束-->
+
+            <!--如果登录，展示姓名-->
+                <p></p>
+            <!--或者展示登录的链接-->
+                <a href=""></a>
+            <!--判断结束-->
+
+
+
+            <p><span class="glyphicon glyphicon-fire"></span><span>等级</span></p>
+            <!--如果没有登录,展示注册信息-->
+                <div id="regis">
+                    <a href="">注册</a>
+                </div>
+            <!--判断结束-->
+
+            <p><span class="glyphicon glyphicon-heart"></span><span>收藏</span></p>
+
+        </div>
+
+        <div class="mine">
+
+            <p>我的订单<a href="#">更多&gt;</a></p>
+
+            <div id="nav">
+
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><span id="wait_pay_list" class="glyphicon glyphicon-usd"></span>
+                                <span class="badge">
+                                    <!--代付款的数量-->
+                                </span></dt>
+                            <dd>待付款</dd>
+                        </dl>
+
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span id="order_payed_list" class="glyphicon glyphicon-envelope"></span>
+                                <span class="badge">
+                                    <!--待收货的数量-->
+                                </span></dt>
+                            <dd>待收货</dd>
+                        </dl>
+
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-pencil"></span></dt>
+                            <dd>待评价</dd>
+                        </dl>
+
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-retweet"></span></dt>
+                            <dd>退款/售后</dd>
+                        </dl>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <menu>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-bullhorn"></span></dt>
+                            <span>积分商城</span>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-credit-card"></span></dt>
+                            <span>优惠券</span>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-import"></span></dt>
+                            <span>收货地址</span>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-phone-alt"></span></dt>
+                            <span>客户反馈</span>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><span class="glyphicon glyphicon-certificate"></span></dt>
+                            <span>关于我们</span>
+                        </dl>
+                    </li>
+                </ul>
+            </menu>
+
+            <!--如果登录了,则退出展示-->
+
+                <p class="logout">
+                    <a href="">退出</a>
+                </p>
+            <!--判断结束-->
+        </div>
+    </div>
+
+
+{% endblock %}
+

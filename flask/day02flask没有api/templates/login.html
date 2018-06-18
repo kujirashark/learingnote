@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    登录
+{% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th>姓名</th>
+                <th>密码</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="username" placeholder="请输入用户名">
+                </td>
+                <td>
+                    <input type="password" name="password" >
+                </td>
+                <td>
+                    <input type="submit" value="提交">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+{% endblock %}

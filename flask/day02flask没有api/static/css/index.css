@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+}
+
+table{
+    background: antiquewhite;
+    border: 1px solid #0a0fff;
+    border-collapse:collapse;
+
+}
+th{
+   border: 1px solid #0406ff;
+
+}
+td{
+    border: 1px solid #0406ff;
+}

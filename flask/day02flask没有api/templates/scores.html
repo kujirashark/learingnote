@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+
+{% from 'common.html' import show_goods,say %}
+
+{% block title %}
+        模板页面
+{% endblock %}
+
+{% block extCSS%}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+{% endblock %}
+
+{% block content%}
+
+        {{scores}}
+
+<hr>
+
+{{ show_goods('1','菠萝')}}
+
+<hr>
+
+{{ show_goods('2','葡萄🍇')}}
+
+<hr>
+
+{{ say()}}
+
+{% endblock %}
+
+
