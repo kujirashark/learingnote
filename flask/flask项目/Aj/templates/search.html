@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>爱家-房源</title>
+    <link href="/static/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/reset.css" rel="stylesheet">
+    <link href="/static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="/static/css/ihome/main.css" rel="stylesheet">
+    <link href="/static/css/ihome/search.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="nav-bar">
+                <h3 class="page-title">房 源</h3>
+                <a class="nav-btn fl" href="/"><span><i class="fa fa-angle-left fa-2x"></i></span></a>
+            </div>
+            <ul class="filter-title-bar">
+                <li class="filter-title">
+                    <span>入住日期</span>
+                    <span><i class="fa fa-angle-down"></i></span>
+                    <span class="split-line fr">|</span>
+                </li>
+                <li class="filter-title">
+                    <span>位置区域</span>
+                    <span><i class="fa fa-angle-down"></i></span>
+                    <span class="split-line fr">|</span>
+                </li>
+                <li class="filter-title">
+                    <span>最新上线</span>
+                    <span><i class="fa fa-angle-down"></i></span>
+                </li>
+            </ul>
+            <div class="filter-item-bar">
+                <div class="filter-item filter-date">
+                    <div class="input-daterange input-group">
+                        <input type="text" class="input-sm form-control" id="start-date" />
+                        <span class="input-group-addon">至</span>
+                        <input type="text" class="input-sm form-control" id="end-date" />
+                    </div>
+                </div>
+                <ul class="filter-item filter-area">
+                    <li area-id="1">东城区</li>
+                    <li area-id="2">西城区</li>
+                    <li area-id="3">朝阳区</li>
+                    <li area-id="4">海淀区</li>
+                    <li area-id="5">昌平区</li>
+                    <li area-id="6">丰台区</li>
+                    <li area-id="7">房山区</li>
+                    <li area-id="8">通州区</li>
+                    <li area-id="9">顺义区</li>
+                    <li area-id="10">大兴区</li>
+                    <li area-id="11">怀柔区</li>
+                    <li area-id="12">平谷区</li>
+                    <li area-id="13">密云区</li>
+                    <li area-id="14">延庆区</li>
+                    <li area-id="15">石景山区</li>
+                    <li area-id="16">门头沟区</li>
+                </ul>
+                <ul class="filter-item filter-sort">
+                    <li class="active" sort-key="new">最新上线</li>
+                    <li sort-key="booking">入住最多</li>
+                    <li sort-key="price-inc">价格 低-高</li>
+                    <li sort-key="price-des">价格 高-低</li>
+                </ul>
+            </div>
+        </div>
+        <div class="display-mask"></div>
+        <ul class="house-list">
+            <li class="house-item">
+                <a href="/detail.html?id=1"><img src="/static/images/home01.jpg"></a>
+                <div class="house-desc">
+                    <div class="landlord-pic"><img src="/static/images/landlord01.jgp"></div>
+                    <div class="house-price">￥<span>200</span>/晚</div>
+                    <div class="house-intro">
+                        <span class="house-title">房屋标题1</span>
+                        <em>出租6间 - 1次入住 - 中关村软件园</em>
+                    </div>
+                </div>
+            </li>
+            <li class="house-item">
+                <a href="/detail.html?id=1"><img src="/static/images/home01.jpg"></a>
+                <div class="house-desc">
+                    <div class="landlord-pic"><img src="/static/images/landlord01.jgp"></div>
+                    <div class="house-price">￥<span>200</span>/晚</div>
+                    <div class="house-intro">
+                        <span class="house-title">房屋标题1</span>
+                        <em>出租6间 - 1次入住 - 中关村软件园</em>
+                    </div>
+                </div>
+            </li>
+            <li class="house-item">
+                <a href="/detail.html?id=1"><img src="/static/images/home01.jpg"></a>
+                <div class="house-desc">
+                    <div class="landlord-pic"><img src="/static/images/landlord01.jgp"></div>
+                    <div class="house-price">￥<span>200</span>/晚</div>
+                    <div class="house-intro">
+                        <span class="house-title">房屋标题1</span>
+                        <em>出租6间 - 1次入住 - 中关村软件园</em>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="footer">
+            <p><span><i class="fa fa-copyright"></i></span>爱家租房&nbsp;&nbsp;享受家的温馨</p>
+        </div>
+    </div>
+    
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script src="/static/js/template.js"></script>
+    <script src="/static/js/ihome/search.js"></script>
+</body>
+</html>
