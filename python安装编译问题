@@ -1,0 +1,5 @@
+# 使用这个编译支持在linux下面 支持installer 打包
+./configure --prefix=/usr/local/python36 --enable-optimizations --enable-shared --with-ssl
+
+# 安装好之后需要copy文件到相应的目录
+cp /usr/local/python36/lib/libpython3.6m.so.1.0 /usr/lib64/
