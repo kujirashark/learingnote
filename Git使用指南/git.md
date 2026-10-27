@@ -1,8 +1,8 @@
 ##### git的使用
 
->作者:李忠林
+>作者:kujirashark
 >
->github: https://github.com/Leezhonglin
+>github: https://github.com/kujirashark
 >
 >日期: 2018年5月6日
 

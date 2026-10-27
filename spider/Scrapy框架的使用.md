@@ -377,7 +377,7 @@ config    0.000GB
 local     0.000GB
 ```
 
-没有我们就用我们的创建数据库的命令进行创建参考这篇文章:[<<MongoDB数据的创建和用法>>](https://leezhonglin.github.io/2018/06/30/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more)
+没有我们就用我们的创建数据库的命令进行创建参考这篇文章:[<<MongoDB数据的创建和用法>>](https://kujirashark.github.io/2018/06/30/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more)
 
 这些工作都做完了.就来到我们的最后一步.启动我们的爬虫进行爬取.
 

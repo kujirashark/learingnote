@@ -183,9 +183,9 @@ class UserTable(models.Model):
 
 >**作 者:** lizhonglin
 >
->**github:** <https://github.com/Leezhonglin/>
+>**github:** <https://github.com/kujirashark/>
 >
->**blog:** <https://leezhonglin.github.io/>
+>**blog:** <https://kujirashark.github.io/>
 
 
 

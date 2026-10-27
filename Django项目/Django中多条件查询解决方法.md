@@ -76,7 +76,7 @@ def order_list(request):
 
 ###### Models见上一篇文章
 
-###### [传送门 Model](https://leezhonglin.github.io/2018/08/06/django%E4%BD%BF%E7%94%A8xlwt%E5%AF%BC%E5%87%BAexcel%E6%96%87%E4%BB%B6/#more)
+###### [传送门 Model](https://kujirashark.github.io/2018/08/06/django%E4%BD%BF%E7%94%A8xlwt%E5%AF%BC%E5%87%BAexcel%E6%96%87%E4%BB%B6/#more)
 
 
 
@@ -249,7 +249,7 @@ $(function () {
 
 >**作 者:** lizhonglin
 >
->**github:** <https://github.com/Leezhonglin/>
+>**github:** <https://github.com/kujirashark/>
 >
->**blog:** <https://leezhonglin.github.io/>
+>**blog:** <https://kujirashark.github.io/>
 
